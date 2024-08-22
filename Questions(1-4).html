@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-1,2,3,4</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <div style="width: 95%; height: 100%; padding: 1%;" >
+        <h2 style="font-weight: 550; ">Q1. Explain the role of operators in JavaScript. Why are they essential in programming?</h2>
+        <h4 style="color: blue;">Ans:- Operators in JavaScript are symbols used to perform operations on variables and values. They are essential in programming because they allow developers to manipulate data, perform calculations, and control the flow of the program. Operators are the building blocks that enable you to write exprssinons, which are the core of any programming logic. </h4>
+        
+      <h2 style="font-weight: 550; color: black;">Q2. Describe the categorization of operators in JavaScript based on their functionality. Provide examples for
+        each category.</h2>
+
+      <h3 style="color: black;">Types of Operators in JavaScript:</h3>
+        <h4 style="color: blue;">1. Arithmetic Ooprators:- Used for mathematical calculations.
+            <br>
+            
+            <li>Examples: + (addition), - (subtraction), * (multiplication), / (division), % (modulus), ++ (increment), -- (decrement).</li>
+            <li>Example: let sum = 10 + 5; (The + operator adds 10 and 5.)</li>
+            
+            <br>2. Comparison Operators:- Used to compare two values.
+            <li>Examples: == (equal to), != (not equal to), === (strict equal), !== (strict not equal), > (greater than), < (less than).</li>
+            <li>Example: if (age > 18) (The > operator checks if age is greater than 18.)</li>
+
+            <br>3. Logical Operators:- Used to combine or invert boolean values.
+            <li>Examples: && (logical AND), || (logical OR), ! (logical NOT).</li>
+            <li>Example: if (isAdult && hasTicket) (The && operator checks if both conditions are true.)</li>
+
+            <br>4. Assignment Operators:- Used to assign values to variables.
+            <li>Examples: = (assign), += (add and assign), -= (subtract and assign).</li>
+            <li>Example: let x = 10; (The = operator assigns the value 10 to x.)</li>
+
+            <br>5. Bitwise Operators:- Perform operations on the binary representations of numbers.
+            <li>Examples: & (AND), | (OR), ^ (XOR), ~ (NOT), << (left shift), >> (right shift).</li>
+            <li>Example: let result = 5 & 1; (The & operator performs a bitwise AND on 5 and 1.)</li>
+
+            <br>6. String Operators:- Used to concatenate strings.
+            <li>Example: + (concatenation).</li>
+            <li>Example: let fullName = firstName + " " + lastName; (The + operator concatenates firstName and lastName.)</li>
+
+            <br>7. Conditional Operators:- A shorthand for 'if-else' statements.
+            <li>Example: condition ? expr1 : expr2.</li>
+            <li>Example: let canVote = age >= 18 ? "Yes" : "No"; (Checks if age is 18 or more.)</li>
+        </h4>
+
+        <h2 style="font-weight: 550; color: black;">Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.</h2>
+        <h4 style="color: blue;">
+          1. Unary Operators:- Unary operators operate on a single operand.
+          <li>Unary Plus('+') :- Converts its operand to a number.</li>
+          <li>Example: 'let num = +"5"; // num becomes 5 (number)'</li>
+<br>
+          <li>Unary Minus (-): Negates the value of its operand</li>
+          <li>Example: let neg = -10; // neg becomes -10'</li>
+
+          <br>
+          <li>Increment (++): Increases its operand by 1</li>
+          <li>Example: let x = 5; x++; // x becomes 6
+          </li>
+
+          <br>
+
+          <li>Decrement (--): Decreases its operand by 1.
+          </li>
+          <li>Example: let y = 5; y--; // y becomes 4
+          </li>
+
+          <br>
+          <li>Logical NOT (!): Inverts the boolean value of its operand.
+          </li>
+          <li>Example: let isTrue = true; let isFalse = !isTrue; // isFalse becomes false
+          </li>
+
+          <br>
+          <li>Typeof (typeof): Returns the type of the operand.
+          </li>
+          <li>Example: typeof 42; // returns "number"
+          </li>
+
+          <br>
+          2. Binary Operators:- Binary operators require two operands (two values) and perform operations on them.
+          <li>Arithmetic Operators: Perform mathematical calculations.
+          </li>
+          <li>Example: let sum = 10 + 5; // sum becomes 15
+          </li>
+     <br>
+     <li>Comparison Operators: Compare two values.
+    </li>
+     <li>Example: let isEqual = 10 == "10"; // isEqual becomes true
+    </li>
+
+    <br>
+    <li>Logical Operators: Combine or invert boolean values.
+    </li>
+    <li>Example: let result = true && false; // result becomes false
+    </li>
+    <br>
+    <li>Assignment Operators: Assign values to variables.
+    </li>
+    <li>Example: let x = 5; x += 3; // x becomes 8
+    </li>
+    <br>
+<li>Bitwise Operators: Perform operations at the binary level.
+</li>
+<li>Example: let result = 5 & 1; // result becomes 1
+</li>
+<br>
+3. Ternary Operator:- The ternary operator is a conditional operator that requires three operands. It is a shorthand way of writing an if-else statement.
+<li>Syntax: condition ? expr1 : expr2</li>
+<li>Example:
+  let age = 18; <br>
+  let canVote = age >= 18 ? "Yes" : "No"; // canVote becomes "Yes"</li>
+
+  </h4>
+
+  <h2> Q4. Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts
+    important?</h2>
+    <h4 style="color: blue;">Operator precedence determines the order in which operations are performed in an expression with multiple operators. Operators with higher precedence are evaluated before those with lower precedence.
+      <br>
+
+      Operator associativity determines the order in which operators of the same precedence level are evaluated. Associativity can be either:
+      <br>
+      
+     <li> Left-to-right (left associative): Operators are evaluated from left to right. </li>
+     <li> Right-to-left (right associative): Operators are evaluated from right to left.</li>
+<br>
+    <li style="color: black;"> Why Understanding Precedence and Associativity is Important: </li>
+   
+1. Avoiding Logical Errors: Misunderstanding operator precedence and associativity can lead to unexpected results in expressions, causing logical errors in your code. <br>
+
+Example: let result = 5 + 2 * 10; (If you expect 70 but get 25 instead).
+<br>
+2.Writing Clear Code: Knowing these concepts allows you to write more concise code without unnecessary parentheses, making your code easier to read and understand. <br>
+
+3.Debugging and Maintenance: When you encounter a bug or need to modify existing code, understanding how expressions are evaluated helps you quickly identify and correct issues. <br>
+
+4.Performance Considerations: Properly structured expressions can improve performance by minimizing unnecessary computations.
+    </h4>
+     </div>
+     <h2>Q5. Write a JavaScript program that calculates the simple interest using the formula Simple interest =
+      (principal * rate * time) / 100.</h2>
+
+      <h2>Q6. Write a Javascript program to calculate the Body Mass Index (BMI) using the formula BMI = weight (kg)/
+        height * height.</h2>
+
+        <h2>Q7. Write a program in JavaScript to calculate the area of a circle given its radius value of 10. Use appropriate
+          arithmetic operators.</h2>
+
+          <script src="Question7.js"></script>
+      <script src="Question6.js"></script>
+      <script src="Question5.js"></script>
+
+</body>
+</html>
